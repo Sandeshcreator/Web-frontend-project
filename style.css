@@ -1,0 +1,408 @@
+ /* style for overall body */
+ 
+ body{
+ min-height: 100vh;
+  overflow-x: hidden;
+  /* padding-bottom: 58px; */
+ }
+ /* design to keep fixed position of navbar */
+.navbar{
+  position: sticky;
+  top: 0px;
+  background-color: #0f7ef1;
+  font-size: 125%;
+}
+
+
+   /* Style design for home photo */
+   #homeimg{
+    width:100%;
+    position: relative;
+     
+   }
+
+ 
+
+   
+  
+   
+   
+    
+ 
+   
+   .hero-image {
+    background-image: url("./images/homepic.jpg");
+    background-color: #cccccc;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(246, 255, 0);
+    
+  }
+
+  .contact:link, .contact:visited {
+    background-color: #ff006f;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10%;
+  }
+  
+  .contact:hover, .contact:active {
+    background-color: rgb(0, 51, 255);
+  }
+
+   
+   
+  
+ 
+ /* style design for my intoduction part*/
+
+.flex-container {
+  padding: 0;
+ margin: 0.5%;
+  
+   
+  display: flex;
+   
+  line-height: 30px;
+  width: 84%;
+  margin-left: 8%;
+}
+ 
+ 
+.flex-item {
+  background: tomato;
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  flex: 1 0 0px;
+  height: auto;
+  border-radius: 5%;
+  text-align: center;
+}
+ 
+ .abts{
+   font-size: large;
+  text-align: center;
+ }
+  .res img{
+    width: 98%;
+    border-radius: 10%;
+  }
+
+.services h1{
+text-align: center;
+margin: 0% 0% 3% 0%;
+
+  }
+
+
+
+/* Style design for gallery photos */
+
+.photos{
+  display: flex;
+   
+}
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;     
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+/* style for contact  */
+  
+
+.meet {
+  display: flex;
+  height: 100vh;
+  margin-top: 1%;
+  margin-bottom: -6%;
+}
+
+.left {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+.right {
+  flex: 1;
+  background-color: black;
+  transition: 0.5s;
+  /* background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80); */
+  background-image: url(https://images.unsplash.com/photo-1559030623-0226b1241edd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85%;
+}
+
+/* https://images.unsplash.com/photo-1559030623-0226b1241edd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80 */
+
+
+.header > h2 {
+  margin: 0;
+  color: #4f46a5;
+}
+
+.header > h4 {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,.4);
+}
+
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > p {
+  text-align: right;
+}
+
+.form > p > a {
+  color: #000;
+  font-size: 14px;
+}
+
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  outline: 0;
+  transition: .2s;
+  margin-top: 20px;
+}
+
+.form-field:focus {
+  border-color: #0f7ef1;
+}
+
+.form > button {
+  padding: 12px 10px;
+  border: 0;
+  background: linear-gradient(to right, #de48b5 0%,#0097ff 100%); 
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.animation {
+  animation-name: move;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.a1 {
+  animation-delay: 2s;
+}
+
+.a2 {
+  animation-delay: 2.1s;
+}
+
+.a3 {
+  animation-delay: 2.2s;
+}
+
+.a4 {
+  animation-delay: 2.3s;
+}
+
+.a5 {
+  animation-delay: 2.4s;
+}
+
+.a6 {
+  animation-delay: 2.5s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 440px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ /* Design for icons  */
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 16px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+   
+    color: rgb(0, 0, 0);
+  }
+  
+ 
+  .fa-youtube {
+   
+    color: rgb(255, 0, 0);
+  }
+  
+  .fa-instagram {
+     
+    color: rgb(255, 140, 140);
+  }
+  
+
+  footer{
+    margin: 0;
+    bottom: 0px;
+  }
+
+
+   /* design for responsive */
+   @media only screen and (max-width: 500px){
+	 
+     
+ body{
+   
+   overflow-x: hidden;
+   
+  }
+    .flex-container {
+      padding: 0;
+     margin: 0%;
+      
+       
+      display: block;
+       
+       
+      width: 100%;
+       
+    }
+
+    .hero-image {
+      background-image: url("./images/homepic.jpg");
+      background-color: #cccccc;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+    }
+     
+      
+   
+  }
+
+  @media only screen and (max-width: 900px){
+         
+ body{
+   
+  overflow-x: hidden;
+  
+ }
+	 
+    .flex-container {
+      padding: 0;
+     margin: 0%;
+      
+       
+      display: block;
+       
+       
+      width: 100%;
+       
+    }
+
+    .hero-image {
+      background-image: url("./images/homepic.jpg");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+    }
+     
+      
+   
+  }
+  
